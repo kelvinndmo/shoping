@@ -1,29 +1,31 @@
 {
   "expo": {
-    "name": "userloc",
+    "name": "Greate Places",
     "slug": "userloc",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/places.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash_icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#171717"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.novak.goodplaces",
+      "supportsTablet": true,
+      "buildNumber": "1.0.0"
     },
     "android": {
+      "package": "com.novak.goodplaces",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "foregroundImage": "./assets/places-adaptive.png",
+        "backgroundColor": "#171717"
+      },
+      "permissions": ["LOCATION", "CAMERA", "WRITE_EXTERNAL_STORAGE"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
